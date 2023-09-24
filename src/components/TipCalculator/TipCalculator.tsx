@@ -1,5 +1,6 @@
 import useTipLogic from "../../hooks/use-tip-logic";
 import BillInput from "../BillInput/BillInput";
+import CodedBy from "../CodedBy/CodedBy";
 import PeopleInput from "../PeopleInput/PeopleInput";
 import Result from "../Result/Result";
 import TipPercentage from "../TipPercentage/TipPercentage";
@@ -44,6 +45,7 @@ export default function TipCalculator() {
           </button>
         </div>
       </article>
+      <CodedBy />
     </main>
   );
 }
