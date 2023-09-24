@@ -1,0 +1,15 @@
+.bill {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__input-container {
+    position: relative;
+
+    & svg {
+      position: absolute;
+      top: 30%;
+      left: 15px;
+    }
+  }
+}
