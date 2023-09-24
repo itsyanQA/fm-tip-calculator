@@ -1,0 +1,30 @@
+.result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__tip {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    &__in-of {
+      color: var(--white);
+      font-size: 14px;
+    }
+
+    &__out-of {
+      color: var(--grayish-cyan);
+      font-size: 12px;
+    }
+  }
+
+  &__number {
+    color: hsla(172, 67%, 45%, 80%);
+    font-size: 38px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 32px;
+    }
+  }
+}
