@@ -19,7 +19,7 @@ export default function useTipLogic() {
   const resetClickHandler = (): void => {
     if (!shouldDisableResetButton) {
       setBill("");
-      setTipPerPerson("");
+      setTipPercentage("");
       setPeopleAmount("");
       setTipPerPerson("");
       setTotalPerPerson("");
