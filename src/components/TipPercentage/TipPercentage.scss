@@ -1,0 +1,66 @@
+.tip-percentage {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__custom-option {
+    background-color: var(--very-light-grayish-cyan) !important;
+    color: var(--very-dark-cyan) !important;
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media screen and (max-width: 600px) {
+      flex-direction: row;
+      gap: 0;
+    }
+    &__group {
+      display: flex;
+      gap: 10px;
+
+      &__selected {
+        background-color: hsla(172, 67%, 45%, 60%) !important;
+        color: var(--very-dark-cyan) !important;
+      }
+
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      & input {
+        width: 40%;
+        border: none;
+        background-color: var(--very-light-grayish-cyan);
+        direction: rtl;
+        font-size: 20px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: var(--very-dark-cyan);
+
+        &::placeholder {
+          color: var(--grayish-cyan);
+        }
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        &:focus {
+          outline: 2px solid var(--strong-cyan);
+        }
+
+        @media screen and (max-width: 600px) {
+          width: 90%;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
