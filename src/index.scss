@@ -1,0 +1,16 @@
+@import "./style/style.scss";
+
+body {
+  margin: 0;
+  background-color: var(--light-grayish-cyan);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
