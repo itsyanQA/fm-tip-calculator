@@ -1,0 +1,111 @@
+.tip-calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160px;
+  flex-direction: column;
+  gap: 50px;
+  min-width: 295px;
+
+  @media screen and (max-width: 600px) {
+    margin-top: 50px;
+  }
+
+  & header {
+    & h1 {
+      letter-spacing: 8px;
+      font-weight: 700;
+      color: var(--very-dark-cyan);
+      font-size: 22px;
+    }
+  }
+}
+
+.tip {
+  width: 55%;
+  height: 410px;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 30px 5px 30px 20px;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  max-width: 792px;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 30px 10px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    width: 70%;
+  }
+
+  &__left-div,
+  &__right-div {
+    width: 44%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media screen and (max-width: 900px) {
+      width: 90%;
+      gap: 35px;
+      margin: auto;
+    }
+  }
+
+  &__left-div {
+    padding: 10px 0;
+
+    @media screen and (max-width: 600px) {
+      padding: 0;
+    }
+  }
+
+  &__right-div {
+    background-color: var(--very-dark-cyan);
+    border-radius: 15px;
+    padding: 40px 30px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 600px) {
+      margin-top: 35px;
+      padding: 20px 20px;
+    }
+  }
+
+  &__results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__clear-btn {
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    background-color: hsla(172, 67%, 45%, 80%);
+    cursor: pointer;
+    color: var(--very-dark-cyan);
+    font-size: 17px;
+    text-transform: uppercase;
+
+    &.disabled {
+      opacity: 30%;
+      cursor: not-allowed;
+    }
+
+    @media screen and (max-width: 600px) {
+      height: 45px;
+      font-size: 18px;
+    }
+
+    &:hover:not(.disabled) {
+      background-color: hsla(172, 67%, 45%, 100%);
+    }
+  }
+}
